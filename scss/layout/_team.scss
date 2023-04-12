@@ -1,0 +1,77 @@
+@media screen and (max-width: 767px) {
+  .team {
+    padding: 96px 0;
+  }
+}
+
+.team {
+  background: #f4f4fd;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+
+  margin-bottom: 72px;
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+
+  margin-bottom: 8px;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+
+  margin-bottom: 8px;
+}
+
+.team-info-wrapper {
+  display: inline-block;
+
+  background: #ffffff;
+  max-width: 264px;
+  
+}
+
+.team-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.team-text-wrapper {
+  padding: 32px 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  gap: 24px;
+}
+
+.social-list-icon {
+  width: 40px;
+  height: 40px;
+
+  fill: var(--button-bar--iris);
+
+  transition: fill 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    fill: var(--active-button-bar--ocean);
+  }
+}

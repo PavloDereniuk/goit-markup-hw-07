@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-text--white);
+  background-color: var(--button-bar--iris);
+
+  cursor: pointer;
+
+  transition: background-color 250ms var(--cubic-bezier);
+
+  &:hover, &:focus {
+    background-color: var(--active-button-bar--ocean);
+  }
+}

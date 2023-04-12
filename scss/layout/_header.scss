@@ -1,0 +1,55 @@
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-address-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+    .mobile-menu-open {
+        display: none;
+    }
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu-open-icon {
+  width: 32px;
+  height: 22px;
+  stroke: #2e2f42;
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
+.header-logo-part {
+  color: #2e2f42;
+}
+
+.mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
