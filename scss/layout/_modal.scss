@@ -212,7 +212,7 @@
 
 .input-policy:checked + .text-policy::before {
   background-color: #404BBF;
-  background-image: url(../images/checkbox.svg);
+  background-image: url(../../images/checkbox.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -251,4 +251,11 @@
 .button-modal:hover,
 .button-modal:focus {
   background-color: #404BBF;
+}
+
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 408px;
+  }
 }

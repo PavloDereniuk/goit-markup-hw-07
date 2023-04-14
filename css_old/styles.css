@@ -111,10 +111,10 @@ ul {
   transition: color 250ms var(--main-cubic-bezier);
 }
 
-.site-nav .link:hover,
+/* .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--active-link-color);
-}
+} */
 
 .site-nav .current-page {
   position: relative;
@@ -838,7 +838,7 @@ ul {
 
 /* -----------------------------Портфоліо -------------------------*/
 
-.main-portfolio {
+/* .main-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -882,26 +882,26 @@ ul {
 
   color: var(--white-text-color);
   background-color: var(--active-link-color);
-}
+} */
 
-.work-list-example {
+/* .work-list-example {
   color: var(--title-text-color);
   text-decoration: none;
   list-style: none;
-}
+} */
 
-.work-text {
+/* .work-text {
   padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
-}
+} */
 
-.work-list {
+/* .work-list {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
-.work-list .item {
+/* .work-list .item {
   width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
@@ -910,31 +910,31 @@ ul {
 
   transition: border 250ms var(--main-cubic-bezier),
     box-shadow 250ms var(--main-cubic-bezier);
-}
+} */
 
-.work-list .item:nth-child(3n) {
+/* .work-list .item:nth-child(3n) {
   margin-right: 0;
 }
 
 .work-list .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
 
-.work-list .item:hover,
+/* .work-list .item:hover,
 .work-list .item:focus {
   border: 1px solid var(--second-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
-.overflow-block {
+/* .overflow-block {
   position: relative;
   display: flex;
   justify-content: center;
   overflow: hidden;
-}
+} */
 
-.hidden-text {
+/* .hidden-text {
   position: absolute;
 
   padding: 40px 32px 164px;
@@ -945,9 +945,8 @@ ul {
   color: var(--second-background-color);
   opacity: 0;
 
-  /* transform: translateY(100%); */
   transition: opacity 250ms var(--main-cubic-bezier);
-}
+} */
 
 .work-list-example:hover .overflow-block .hidden-text,
 .work-list-example:focus .overflow-block .hidden-text {

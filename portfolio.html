@@ -18,44 +18,139 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="header">
-      <div class="container-header container">
-        <nav class="main-nav">
-          <a href="./index.html" class="logo link"
-            >Web<span class="spart-logo">Studio</span></a
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="logo header-logo link"
+            >Web<span class="header-logo-part">Studio</span></a
           >
-
-          <ul class="site-nav list link">
-            <li class="item"><a href="./index.html" class="link">Studio</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current-page">Portfolio</a>
+          <ul class="header-menu list">
+            <li class="header-menu-item">
+              <a href="./index.html" class="header-menu-link link">Studio</a>
             </li>
-            <li class="item"><a href="" class="link">Contacts</a></li>
+            <li class="header-menu-item">
+              <a href="./portfolio.html" class="header-menu-link active-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link link">Contacts</a>
+            </li>
           </ul>
         </nav>
 
-        <address class="address">
-          <ul class="auth-nav list">
-            <li class="item">
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <address class="header-address-wrapper">
+          <ul class="header-contacts list">
+            <li class="header-contacts-item">
               <a
                 href="mailto:info@devstudio.com"
-                class="auth-nav-link mail link"
+                class="header-contacts-link link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <a href="tel:+110001111111" class="auth-nav-link link"
+            <li class="header-contacts-item">
+              <a href="tel:+110001111111" class="header-contacts-link link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
       </div>
+
+      <!-- Мобільне меню -->
+
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <div class="mobile-menu-top">
+            <button class="mobile-menu-close-button js-close-menu">
+              <svg class="mobile-menu-close-icon">
+                <use href="./images/symbol-defs.svg#icon-close-symbol"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link link">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./portfolio.html" class="mobile-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a
+                  href="#"
+                  class="mobile-menu-link mobile-menu-link-contact link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-menu-down">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-contacts-link mobile-contacts-link-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts-link mobile-contacts-link-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-social-list list">
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="mobile-social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="mobile-social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="mobile-social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="mobile-social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-2"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
+
+
 
     <main>
       <section class="main-portfolio">
@@ -63,7 +158,7 @@
           <h1 hidden>Our projects</h1>
 
           <!-- Фільтр -->
-          <ul class="filter list">
+          <ul class="filter-list list">
             <li class="item">
               <button type="button" class="filter-button">All</button>
             </li>
@@ -83,223 +178,378 @@
 
           <!-- Роботи -->
 
-          <ul class="work-list list">
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work1.jpg"
-                    alt="work1"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+          <ul class="works-list list">
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item1.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item1@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item1.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item1@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item1.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item1@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item1.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Banking App Interface Concept</h2>
-                  <p class="text">App</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Banking App Interface Concept</h2>
+                  <p class="works-text">App</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work2.jpg"
-                    alt="work2"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item2.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item2@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item2.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item2@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item2.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item2@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item2.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Cashless Payment</h2>
-                  <p class="text">Marketing</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Cashless Payment</h2>
+                  <p class="works-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work3.jpg"
-                    alt="work3"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item3.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item3@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item3.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item3@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item3.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item3@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item3.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Meditaion App</h2>
-                  <p class="text">App</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Meditaion App</h2>
+                  <p class="works-text">App</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work4.jpg"
-                    alt="work4"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item4.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item4@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item4.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item4@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item4.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item4@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item4.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Taxi Service</h2>
-                  <p class="text">Marketing</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Taxi Service</h2>
+                  <p class="works-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work5.jpg"
-                    alt="work5"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item5.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item5@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item5.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item5@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item5.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item5@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item5.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Screen Illustrations</h2>
-                  <p class="text">Design</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Screen Illustrations</h2>
+                  <p class="works-text">Design</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work6.jpg"
-                    alt="work6"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item6.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item6@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item6.webp"
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item6.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item6@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item6.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Online Courses</h2>
-                  <p class="text">Marketing</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Online Courses</h2>
+                  <p class="works-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work7.jpg"
-                    alt="work7"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item7.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item7@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item7.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item7@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item7.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item7@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item7.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Instagram Stories Concept</h2>
-                  <p class="text">Design</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Instagram Stories Concept</h2>
+                  <p class="works-text">Design</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work8.jpg"
-                    alt="work8"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item8.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item8@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item8.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item8@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item8.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item8@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item8.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Organic Food</h2>
-                  <p class="text">Web Site</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Organic Food</h2>
+                  <p class="works-text">Web Site</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="work-list-example link">
-                <div class="overflow-block">
-                  <img
-                    src="./images/work9.jpg"
-                    alt="work9"
-                    width="360"
-                    height="300"
-                    class="work-example-foto img"
-                  />
-                  <div class="product-overlay">
-                    <p class="hidden-text">
+
+
+
+
+
+            <li class="works-item">
+              <a href="" class="works-link link">
+                <div class="works-block-wrapper">
+                  <picture>
+                    <source srcset="./images/p-desktop/portfolio-desktop-item9.webp 1x, 
+                    ./images/p-desktop/portfolio-desktop-item9@2x.webp 2x" 
+                    media="(min-width: 1440px)"
+                    type="image/webp">
+                
+                    <source srcset="./images/p-tablet/portfolio-tablet-item9.webp 1x, 
+                    ./images/p-tablet/portfolio-tablet-item9@2x.webp 2x" 
+                    media="(min-width: 768px)"
+                    type="image/webp">
+                  
+                    <source srcset="./images/p-mobile/portfolio-mobile-item9.webp 1x, 
+                    ./images/p-mobile/portfolio-mobile-item9@2x.webp 2x" 
+                    media="(max-width: 767px)"
+                    type="image/webp">
+                  
+                    <img src="./images/portfolio/desktop/portfolio-desktop-item9.jpg" 
+                    alt="portfolio item"
+                    class="work-example-foto img">
+                  </picture>
+                  <div class="works-product-description">
+                    <p class="works-hidden-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                       App · Cloud Storage App
                     </p>
                   </div>
                 </div>
-                <div class="work-text">
-                  <h2 class="title">Fresh Coffee</h2>
-                  <p class="text">Web Site</p>
+                <div class="work-text-wrapper">
+                  <h2 class="works-title">Fresh Coffee</h2>
+                  <p class="works-text">Web Site</p>
                 </div>
               </a>
             </li>
+
+
+
+            
           </ul>
         </div>
       </section>
@@ -307,70 +557,65 @@
 
     <!-- Підвал -->
     <footer class="footer">
-      <div class="container main-container-footer">
-        <div class="container-footer">
-          <a href="./index.html" class="logo link"
-            >Web<span class="spart-logo logo-footer">Studio</span></a
-          >
-          <p class="text-footer">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="social-footer">
-          <p class="text-footer text-footer-social">Social media</p>
-          <div>
-            <ul class="footer-links list">
-              <li class="item">
-                <a href="#">
-                  <svg class="footer-social-links">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+      <div class="container footer-container">
+       <div class="footer-first-part-wrapper">
+         <div class="footer-text-wrapper">
+            <a href="./index.html" class="logo footer-logo link"
+              >Web<span class="logo-part logo-part-footer">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+         </div>
+  
+          <div class="social-footer-wrapper">
+            <p class="footer-subtitle footer-subtitle-social">Social media</p>
+            <ul class="mobile-social-list mobile-social-list-footer list">
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon-footer">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a href="#">
-                  <svg class="footer-social-links">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon-footer">
+                    <use href="./images/symbol-defs.svg#icon-twitter-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a href="#">
-                  <svg class="footer-social-links">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon-footer">
+                    <use href="./images/symbol-defs.svg#icon-facebook-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a href="#">
-                  <svg class="footer-social-links">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              <li class="mobile-social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon-footer">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-2"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-        </div>
+       </div>
 
-        <div class="form-footer-main">
-          <div class="form-footer">
-            <label
-              for="mail"
-              class="label-footer text-footer text-footer-social"
-              >Subscribe</label
-            >
+        <div class="footer-form-wrapper">
+          <label for="mail" class="footer-subtitle footer-subtitle-label"
+            >Subscribe
             <input
               type="email"
               name="mail"
               id="mail"
-              class="mail-footer"
+              class="footer-form"
               placeholder="E-mail"
             />
-          </div>
-        </div>
-        <div class="button-footer">
-          <button type="button" class="button-subscribe">
+          </label>
+          <button type="button" class="button button-footer">
             Subscribe
             <svg class="button-footer-icon">
               <use href="./images/symbol-defs.svg#icon-telegram-frame"></use>
@@ -379,5 +624,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
