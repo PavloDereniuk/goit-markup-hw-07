@@ -113,20 +113,11 @@
 }
 
 .button-footer {
-  width: 165px;
-  height: 40px;
-
   display: flex;
   align-self: flex-end;
   align-items: center;
 
   padding: 8px 24px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
-  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .button-footer-icon {
