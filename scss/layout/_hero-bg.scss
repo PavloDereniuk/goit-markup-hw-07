@@ -4,7 +4,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../../images/hero/hero-image-desktop.jpg);
+    url(/images/hero/hero-image-desktop.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero/hero-image-tablet.jpg");
-    max-width: 768px;
+    max-width : 768px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -59,7 +59,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/hero-image-desktop.jpg");
+      url("../../images/hero/hero-image-desktop.jpg");
     max-width: 1440px;
   }
 
@@ -71,6 +71,6 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/hero-image-desktop@2x.jpg");
+      url("../../images/hero/hero-image-desktop@2x.jpg");
   }
 }
