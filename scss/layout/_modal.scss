@@ -213,7 +213,7 @@
 
 .input-policy:checked + .text-policy::before {
   background-color: var(--active-checkbox-policy--ocean);
-  background-image: url(../../images/checkbox.svg);
+  background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
